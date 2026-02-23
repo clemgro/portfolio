@@ -6,7 +6,7 @@ import Contact from "../pages/Contact";
 
 export default function Layout() {
   return (
-    <Container disableGutters>
+    <Container maxWidth={false} disableGutters>
       <Navbar />
       <Outlet />
       <About />

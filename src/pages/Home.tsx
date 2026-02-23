@@ -17,7 +17,7 @@ export default function Home() {
           width: "100%",
           position: "relative",
           backgroundImage: `linear-gradient(rgba(11,18,21,0.5), rgba(11,18,21,0.5)), url(${bg})`,
-          backgroundSize: "fill",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
@@ -32,7 +32,6 @@ export default function Home() {
           </Typography>
         </Stack>
 
-        {/* Flèche scroll */}
         <Box
           sx={{
             position: "absolute",

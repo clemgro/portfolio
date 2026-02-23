@@ -21,19 +21,49 @@ export default function Contact() {
           gap: 4,
         }}
       >
-        <Stack justifyContent="space-between" sx={{ height: "100%" }}>
-          <Stack direction="row" spacing={2}>
-            <IconButton component="a" href="https://github.com/clemgro" target="blank" rel="noopener">
+        <Stack justifyContent="space-between" sx={{ height: "100%", alignItems: "center" }}>
+          <Stack direction="row" spacing={2} >
+            <IconButton
+              component="a"
+              href="https://github.com/clemgro"
+              target="_blank"
+              rel="noopener"
+              sx={{
+                bgcolor: "#e0e0e0",
+                color: "#0B1215",
+                transition: "all 0.2s ease",
+                "&:hover": {
+                  bgcolor: "#337ab7",
+                  color: "#ffffff",
+                },
+              }}
+            >
               <GitHubIcon />
             </IconButton>
-            <IconButton component="a" href="https://www.linkedin.com/in/cl%C3%A9ment-grosselle/" target="blank" rel="noopener">
+            <IconButton
+              component="a"
+              href="https://www.linkedin.com/in/cl%C3%A9ment-grosselle/"
+              target="_blank"
+              rel="noopener"
+              sx={{
+                bgcolor: "#e0e0e0",
+                color: "#0B1215",
+                transition: "all 0.2s ease",
+                "&:hover": {
+                  bgcolor: "#337ab7",
+                  color: "#ffffff",
+                },
+              }}
+            >
               <LinkedInIcon />
             </IconButton>
           </Stack>
-          <Typography variant="body1" color="secondary">&copy; Clément Grosselle 2026</Typography>
+          <Typography variant="body1" color="secondary" margin="1em">
+            &copy; Clément Grosselle 2026
+          </Typography>
         </Stack>
         <Stack
-            bgcolor="primary.light"
+          bgcolor="primary.light"
           component="form"
           direction="row"
           spacing={2}
