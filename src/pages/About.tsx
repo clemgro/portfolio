@@ -2,42 +2,37 @@ import { Box, Typography, Stack } from "@mui/material";
 
 export default function About() {
   return (
-    <Box py={8}>
-      <Stack spacing={3}>
-        <Typography variant="h4" fontWeight={600}>
-          À propos
-        </Typography>
-
-        <Typography>
-          Concepteur développeur d’applications orienté qualité logicielle.
-          Approche méthodique, centrée sur la compréhension du besoin
-          et la simplicité de la solution.
-        </Typography>
-
-        <Typography variant="h6">Parcours</Typography>
-        <Typography>
-          Développement d’applications web avec une montée en compétence continue
-          sur React et l’écosystème frontend moderne.
-        </Typography>
-
-        <Typography variant="h6">Méthode de travail</Typography>
-        <Typography component="ul">
-          <li>Analyse du besoin</li>
-          <li>Conception claire</li>
-          <li>Implémentation propre</li>
-          <li>Validation et itération</li>
-        </Typography>
-
-        <Typography variant="h6">Technologies</Typography>
-        <Typography>
-          React, TypeScript, Material UI, Git, Vite.
-        </Typography>
-
-        <Typography variant="h6">Contact</Typography>
-        <Typography>
-          Disponible pour missions, projets ou échanges techniques.
-        </Typography>
-      </Stack>
+    <Box
+    sx={{
+      marginTop: "2em",
+      padding: "2em",
+      backgroundColor: "background",
+      color: "primary.main",
+      textAlign: "center",
+    }}>
+      <Typography>
+        Auparavant dans le bâtiment, j’ai choisi de me reconvertir dans le développement informatique, car c‘est un domaine qui me passionne. J’ai
+        dernièrement obtenu le titre de Concepteur Développeur d’Applications. Durant celui-ci, j’ai acquis de solides bases en back-end,
+        principalement en Java. À ce jour, je suis plus que motivé à faire accroître mes compétences techniques et à m’investir durablement dans des
+        projets. Disponible dès maintenant, je suis joignable afin d’échanger plus en détails sur mes expériences et mes motivations.
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        Auparavant dans le bâtiment, j’ai choisi de me reconvertir dans le développement informatique, car c‘est un domaine qui me passionne. J’ai
+        dernièrement obtenu le titre de Concepteur Développeur d’Applications. Durant celui-ci, j’ai acquis de solides bases en back-end,
+        principalement en Java. À ce jour, je suis plus que motivé à faire accroître mes compétences techniques et à m’investir durablement dans des
+        projets. D
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        Je suis à la recherche d’un poste de développeur Java, mais je suis également ouvert à d’autres opportunités dans le domaine du développement
+        informatique.
+      </Typography>
     </Box>
   );
 }

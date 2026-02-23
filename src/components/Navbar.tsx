@@ -1,17 +1,25 @@
-import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
+import { AppBar, Toolbar, Typography, Button, Box, useScrollTrigger } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
 export default function Navbar() {
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 10,
+  });
+
   return (
-    <AppBar position="sticky" elevation={0}>
+    <AppBar
+      position="fixed"
+      elevation={trigger ? 4 : 0}
+      sx={{
+        backgroundColor: trigger ? "background.paper" : "transparent",
+        transition: "all 0.3s ease",
+        backdropFilter: trigger ? "blur(6px)" : "none",
+      }}
+    >
       <Toolbar sx={{ justifyContent: "space-between" }}>
-        <Typography
-          variant="h6"
-          component={RouterLink}
-          to="/"
-          sx={{ textDecoration: "none", color: "inherit", fontWeight: 600 }}
-        >
-          Portfolio
+        <Typography variant="h6" component={RouterLink} to="/" sx={{ textDecoration: "none", color: "inherit" }}>
+          Clément Grosselle
         </Typography>
 
         <Box>
